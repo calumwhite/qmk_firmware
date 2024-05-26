@@ -1,0 +1,49 @@
+Ψ Compiling keymap with gmake --jobs=1 handwired/kbupdated:default
+
+
+QMK Firmware 0.22.5
+⚠ handwired/kbupdated: UNUSED_PINS in config.h is deprecated and will be removed at a later date
+⚠ handwired/kbupdated: DEVICE_VER in config.h is deprecated in favor of `usb.device_version` in info.json and will be removed at a later date
+⚠ handwired/kbupdated: MANUFACTURER in config.h is deprecated in favor of `manufacturer` in info.json and will be removed at a later date
+⚠ handwired/kbupdated: MANUFACTURER in config.h is overwriting manufacturer in info.json
+⚠ handwired/kbupdated: PRODUCT in config.h is deprecated in favor of `keyboard_name` in info.json and will be removed at a later date
+⚠ handwired/kbupdated: PRODUCT_ID in config.h is deprecated in favor of `usb.pid` in info.json and will be removed at a later date
+⚠ handwired/kbupdated: VENDOR_ID in config.h is deprecated in favor of `usb.vid` in info.json and will be removed at a later date
+⚠ handwired/kbupdated: Layout "LAYOUT_ergodox" is offset on Y axis by 0.375
+Making [1mhandwired/kbupdated[0m with keymap [1mdefault[0m
+
+⚠ handwired/kbupdated: UNUSED_PINS in config.h is deprecated and will be removed at a later date
+⚠ handwired/kbupdated: DEVICE_VER in config.h is deprecated in favor of `usb.device_version` in info.json and will be removed at a later date
+⚠ handwired/kbupdated: MANUFACTURER in config.h is deprecated in favor of `manufacturer` in info.json and will be removed at a later date
+⚠ handwired/kbupdated: MANUFACTURER in config.h is overwriting manufacturer in info.json
+⚠ handwired/kbupdated: PRODUCT in config.h is deprecated in favor of `keyboard_name` in info.json and will be removed at a later date
+⚠ handwired/kbupdated: PRODUCT_ID in config.h is deprecated in favor of `usb.pid` in info.json and will be removed at a later date
+⚠ handwired/kbupdated: VENDOR_ID in config.h is deprecated in favor of `usb.vid` in info.json and will be removed at a later date
+⚠ handwired/kbupdated: Layout "LAYOUT_ergodox" is offset on Y axis by 0.375
+avr-gcc (GCC) 5.4.0
+Copyright © 2015 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Compiling: keyboards/handwired/kbupdated/kbupdated.c                                                [32;01m[OK][0m
+Compiling: .build/obj_handwired_kbupdated_default/src/default_keyboard.c                           In file included from [01m[K./.build/obj_handwired_kbupdated_default/src/default_keyboard.h:41:0[m[K,
+                 from [01m[K.build/obj_handwired_kbupdated_default/src/default_keyboard.c:26[m[K:
+[01m[Kkeyboards/handwired/kbupdated/kbupdated.h:9:1:[m[K [01;31m[Kerror: [m[Kexpected identifier or ‘[01m[K([m[K’ before ‘[01m[K{[m[K’ token
+ {KC_NO, K11, K12, K13, K14, K15, K16, K17, KC_NO, KC_NO, KC_NO, K102, K103, K104, K105, K106, K107, K108, K109},
+[01;32m[K ^[m[K
+[01m[Kkeyboards/handwired/kbupdated/kbupdated.h:9:112:[m[K [01;31m[Kerror: [m[Kexpected identifier or ‘[01m[K([m[K’ before ‘[01m[K,[m[K’ token
+ {KC_NO, K11, K12, K13, K14, K15, K16, K17, KC_NO, KC_NO, KC_NO, K102, K103, K104, K105, K106, K107, K108, K109},
+[01;32m[K                                                                                                                ^[m[K
+[01m[Kkeyboards/handwired/kbupdated/kbupdated.h:11:110:[m[K [01;31m[Kerror: [m[Kexpected identifier or ‘[01m[K([m[K’ before ‘[01m[K,[m[K’ token
+     {K20, K21, K22, K23, K24, K25, K26, K27, K28, K200, K201, K202, K203, K204, K205, K206, K207, K208, K209}, {
+[01;32m[K                                                                                                              ^[m[K
+[01m[Kkeyboards/handwired/kbupdated/kbupdated.h:14:1:[m[K [01;31m[Kerror: [m[Kexpected identifier or ‘[01m[K([m[K’ before ‘[01m[K}[m[K’ token
+ }
+[01;32m[K ^[m[K
+ [31;01m[ERRORS][0m
+ | 
+ | 
+ | 
+gmake[1]: *** [builddefs/common_rules.mk:361: .build/obj_handwired_kbupdated_default/.build/obj_handwired_kbupdated_default/src/default_keyboard.o] Error 1
+[31;01mMake finished with errors
+[0mgmake: *** [Makefile:392: handwired/kbupdated:default] Error 1
