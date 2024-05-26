@@ -16,24 +16,33 @@
 
 /* key matrix pins */
 #define MATRIX_ROW_PINS \
-    { F7, F6, F5, F4 }
-#define MATRIX_COL_PINS \
-    { D4, D7, E6, B4, B5, B6, B2, B3, B1, NO_PIN }
+    {                   \
+        F7, F6, F5, F4  \
+    }
+#define MATRIX_COL_PINS                            \
+    {                                              \
+        D4, D7, E6, B4, B5, B6, B2, B3, B1, NO_PIN \
+    }
 #define UNUSED_PINS
 
 /* key matrix pins right */
 #define MATRIX_ROW_PINS_RIGHT \
-    { F7, F6, F5, F4 }
-#define MATRIX_COL_PINS_RIGHT \
-    { C6, B1, B3, B2, B6, B5, B4, E6, D7, D4 }
+    {                         \
+        F7, F6, F5, F4        \
+    }
+#define MATRIX_COL_PINS_RIGHT                  \
+    {                                          \
+        C6, B1, B3, B2, B6, B5, B4, E6, D7, D4 \
+    }
 
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
 
+#define BACKLIGHT_PIN C6
 /* number of backlight levels */
 
 #ifdef BACKLIGHT_PIN
-#    define BACKLIGHT_LEVELS 3
+#define BACKLIGHT_LEVELS 3
 #endif
 
 /* Set 0 if debouncing isn't needed */
@@ -45,8 +54,6 @@
 /* Locking resynchronize hack */
 #define LOCKING_RESYNC_ENABLE
 
-#define BACKLIGHT_PIN C6
-
 /* key combination for command */
 #define IS_COMMAND() (keyboard_report->mods == (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_RSHIFT)))
 
@@ -57,10 +64,10 @@
 #define USE_I2C
 
 #ifdef RGB_DI_PIN
-#    define RGBLED_NUM 0
-#    define RGBLIGHT_HUE_STEP 8
-#    define RGBLIGHT_SAT_STEP 8
-#    define RGBLIGHT_VAL_STEP 8
+#define RGBLED_NUM 0
+#define RGBLIGHT_HUE_STEP 8
+#define RGBLIGHT_SAT_STEP 8
+#define RGBLIGHT_VAL_STEP 8
 #endif
 
 #endif
