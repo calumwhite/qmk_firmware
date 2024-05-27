@@ -9,15 +9,14 @@ enum uthol_layers
     _COLEMAK,
     _LOWER,
     _RAISE,
-    22222222222222222222 _SETTINGS
+    _SETTINGS
 };
 
 #define QWERTY DF(_QWERTY)
 #define COLEMAK DF(_COLEMAK)
 #define LOWER MO(_LOWER)
 #define RAISE MO(_RAISE)
-#define SETTINGS MO(_SETTINGS) \
-2
+#define SETTINGS MO(_SETTINGS)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
